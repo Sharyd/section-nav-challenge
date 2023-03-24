@@ -23,7 +23,7 @@ const Navigation = () => {
             />
             <div className="justify-between lg:flex w-full items-center hidden">
                 <div className="flex items-center justify-center gap-16">
-                    <img className="w-28" src={logo} alt="logo" />
+                    <img src={logo} alt="logo" />
                     <ul className="flex gap-12 items-center justify-center ">
                         <div className="relative">
                             <li

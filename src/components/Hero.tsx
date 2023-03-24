@@ -5,7 +5,7 @@ import imageHeroMobile from '/images/image-hero-mobile.png'
 
 const Hero = () => {
     return (
-        <section className="flex p-0 lg:p-20 flex-col  gap-12 lg:gap-10 items-center lg:flex-row justify-center lg:items-end lg:justify-evenly xl:gap-0 m-auto">
+        <section className="flex p-0 lg:p-20 flex-col gap-12 lg:gap-10 items-center lg:flex-row lg:items-end justify-center xl:gap-44 m-auto">
             <img
                 className="block lg:hidden max-h-full"
                 src={imageHeroMobile}
@@ -33,7 +33,7 @@ const Hero = () => {
             </div>
             <div>
                 <img
-                    className="hidden lg:block max-h-[700px]"
+                    className="hidden lg:block max-h-[600px] xl:max-h-[650px]"
                     src={imageHeroDesktop}
                     alt="image of hero section"
                 />

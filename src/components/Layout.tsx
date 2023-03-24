@@ -7,13 +7,26 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
     return (
-        <div className="bg-almostWhite overflow-x-hidden min-h-screen">
-            <header>
-                <Navigation />
-            </header>
+        <>
+            <div className="bg-almostWhite md:min-h-[92vh] h-full">
+                <header>
+                    <Navigation />
+                </header>
 
-            <main className="w-full">{children}</main>
-        </div>
+                <main className="w-full h-full">{children}</main>
+            </div>
+            <div className="text-[11px] mt-6 text-center hidden lg:block">
+                Challenge by{' '}
+                <a
+                    className="text-linkColor"
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                >
+                    Frontend Mentor
+                </a>
+                . Coded by <a href="#">Daniel</a>.
+            </div>
+        </>
     )
 }
 
